@@ -13,7 +13,7 @@ export const Navbar = () => {
       <div className="max-w-5xl mx-auto px-4">
         <div className="flex justify-between items-center h-16">
           <Link to="/" className="font-mono text-xl font-bold text-white">
-            forum<span className="text-purple-500">.app</span>
+            NOC<span className="text-red-500">talk</span>
           </Link>
 
           {/* Desktop Links */}
@@ -28,7 +28,7 @@ export const Navbar = () => {
               to="/create"
               className="text-gray-300 hover:text-white transition-colors"
             >
-              Create Post
+              Post
             </Link>
             <Link
               to="/communities"

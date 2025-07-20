@@ -85,7 +85,7 @@ export const CreatePost = () => {
                 type="submit"
                 className="w-full py-3 bg-orange-600 hover:bg-orange-500 text-white font-semibold rounded-md transition duration-200"
             >
-                Create Post
+                Post
             </button>
         </form>
     );
