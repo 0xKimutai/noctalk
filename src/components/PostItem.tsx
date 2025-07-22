@@ -12,7 +12,15 @@ export const PostItem = ({ post }: Props) => {
                 <Link to={`/post/${post.id}`} className="no-underline text-white">
                     {/* Header: Avatar and title */}
                     <div className="flex items-center gap-3 mb-3">
-                        <div className="w-10 h-10 rounded-full bg-gray-600" />
+                        {post.avatar_url ? (
+                        <img
+                            src={post.avatar_url}
+                            alt="User Avatar"
+                            className="w-[35px] h-[35px] rounded-full object-cover"
+                        />
+                        ) : (
+                        <div className="w-[35px] h-[35px] rounded-full bg-gradient-to-tl from-[#0d4117] to-[#00a]" />
+                        )}
                         <div className="flex flex-col">
                             <div className="font-semibold text-base">{post.title}</div>
                         </div>
