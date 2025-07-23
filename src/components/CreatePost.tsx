@@ -6,7 +6,7 @@ import { useAuth } from '../context/AuthContext';
 interface PostInput {
     title: string;
     content: string;
-    avatar_url: string | null;
+    avatar_url?: string | null;
 }
 
 const createPost = async (post: PostInput, imageFile: File) => {

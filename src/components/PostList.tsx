@@ -9,6 +9,8 @@ export interface Post {
     image_url: string;
     created_at: string;
     avatar_url?: string;
+    like_count?: number;
+    comment_count?: number;
 }
 
 const fetchPosts = async (): Promise<Post[]> => {
