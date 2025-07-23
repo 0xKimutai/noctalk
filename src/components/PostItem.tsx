@@ -39,6 +39,18 @@ export const PostItem = ({ post }: Props) => {
                             className="w-full h-64 object-cover"
                         />
                     </div>
+
+                   <div className="flex items-center space-x-6 text-sm text-gray-400 mt-2">
+                        <span className="flex items-center space-x-1">
+                            <span className="font-medium text-white">Likes:</span>
+                            <span>{post.like_count}</span>
+                        </span>
+                        <span className="flex items-center space-x-1">
+                            <span className="font-medium text-white">Comments:</span>
+                            <span>{post.comment_count}</span>
+                        </span>
+                    </div>
+
                 </Link>
             </div>
         </div>
