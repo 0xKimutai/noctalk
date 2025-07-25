@@ -30,18 +30,7 @@ export const Navbar = () => {
             >
               Post
             </Link>
-            <Link
-              to="/communities"
-              className="text-gray-300 hover:text-white transition-colors"
-            >
-              Communities
-            </Link>
-            <Link
-              to="/community/create"
-              className="text-gray-300 hover:text-white transition-colors"
-            >
-              Create Community
-            </Link>
+      
           </div>
 
           {/* Desktop Auth */}
